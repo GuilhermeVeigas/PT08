@@ -2,21 +2,22 @@
 <html>
 <body>
 
-<h2>My First JavaScript</h2>
+<h2>Bernardo e Veigas</h2>
 
 <script>
 
    var rad;
-   do {
-   rad = prompt("")
-   if (rad == "" || rad == null)
-   break;
+   do 
+      {
+         rad = prompt("")
+         if (rad == "" || rad == null) <!-- senao colocar numero valido, nao dara valor de area-->
+         break;
+         alert("raio = " + rad + ", area = " + area(rad)); <!-- Ao colocar uma meida no raio, irá dar a sua área-->
+      }
    
-   alert("radius = " + rad + ", area = " + area(rad));
-   }
    while (rad != "" && rad != null);
    
-   function area(r) {     	return 3.141592654 * r * r;     }
+   function area(r) {     	return 3.141592654 * r * r;     } <!-- area de uma circunferencia-->
 
 </script>
 </body>
